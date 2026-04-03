@@ -1,159 +1,218 @@
-# 🏛️ GovAssist AI — Right Scheme, Right Person, Right Documents  
+# 🏥 Apex Health AI Suite
 
-**An AI-powered, voice-first assistant for inclusive access to government welfare schemes in India.**  
+## 🚀 Overview
 
-> Built for the **AWS AI for Bharat Hackathon** by **CYBERNETICS CREW BIT**
+Apex Health AI Suite is a next-generation **AI-powered healthcare management platform** designed to assist doctors, patients, and administrators through intelligent dashboards, predictive analytics, and real-time monitoring.
 
----
-
-## 🌍 Problem Statement  
-
-Millions of Indian citizens—especially in rural areas—fail to access welfare schemes due to:  
-
-- Low digital literacy  
-- Complex eligibility rules  
-- Unclear document requirements  
-- Language barriers  
-- Dependence on middlemen  
-- High application rejection rates  
-
-As a result, deserving beneficiaries are excluded from critical social benefits.
+The system provides a **secure, role-based interface** with future-ready AI integration for healthcare decision support.
 
 ---
 
-## 💡 Our Solution — GovAssist AI  
+## 🎯 Chosen Vertical
 
-**GovAssist AI** is an end-to-end intelligent assistant that helps citizens:
+**Healthcare AI Assistant**
 
-- Discover **eligible government schemes**
-- Understand **why they qualify**
-- Get a **document checklist**
-- Fill forms **using voice**
-- Reduce errors via **AI reconfirmation**
-- Navigate directly to official portals  
-- Receive simple, regional-language guidance  
+This solution focuses on improving:
 
-### Motto  
-> **“Right Scheme. Right Person. Right Documents.”**
+* Patient monitoring
+* Clinical decision support
+* Healthcare accessibility
+* Real-time insights for doctors
 
 ---
 
-## ✨ Key Features  
+## 🧠 Problem Statement
 
-- 🎙️ **Voice-first access** using Bhashini APIs  
-- 🧠 **Rule-based + AI eligibility engine**  
-- 🔍 **Explainable AI (“Why Eligible?”)**  
-- 📄 **Automatic document checklist generation**  
-- 📝 **Voice-based form filling**  
-- ✅ **Error prevention via reconfirmation loop**  
-- 🔗 **Direct redirection to official portals**  
-- ⚖️ **Constitution & rights-based knowledge layer**  
-- 🔐 **Privacy-first design with minimal data collection**  
+Healthcare systems often lack:
+
+* Real-time patient insights
+* Predictive risk analysis
+* Centralized and intelligent dashboards
+
+This project aims to solve these problems using **AI-driven architecture and modern web technologies**.
 
 ---
 
-## 📊 Dataset Used  
+## ⚙️ Features
 
-We use the publicly available dataset:
+### 🔐 Authentication System
 
-🔗 **Indian Government Schemes Dataset (Kaggle)**  
-https://www.kaggle.com/datasets/nitishabharathi/indian-government-schemes  
+* Role-based access:
 
-This dataset is processed and enriched with:
+  * Admin
+  * Doctor
+  * Patient
+* Secure login UI (extendable with JWT / OAuth)
 
-- Eligibility rules  
-- Document mappings  
-- Official form references  
-- Portal links  
+### 🧑‍⚕️ Doctor Dashboard
 
----
+* Patient overview
+* Clinical monitoring interface
+* AI insights panel (planned)
 
-## ☁️ AWS Architecture  
+### 🧑 Patient Hub
 
-GovAssist AI is built using a **scalable, serverless-first AWS stack**:
+* Personal health dashboard
+* Medical data visualization
+* Activity tracking
 
-| Layer | AWS Service |
-|------|-------------|
-| Voice & Language | **Bhashini APIs** |
-| AI Reasoning | **AWS Bedrock (LLM)** |
-| OCR & Document Validation | **AWS Textract** |
-| Backend APIs | **FastAPI on AWS Lambda / ECS** |
-| Database | **PostgreSQL / DynamoDB** |
-| File Storage | **AWS S3** |
-| Monitoring | **AWS CloudWatch** |
+### 📊 AI Evaluation Dashboard
 
----
+* Model evaluation interface
+* Metrics visualization (future scope)
 
-## 🏗️ System Workflow  
+### 🎨 UI/UX
 
-1. User speaks in local language  
-2. Bhashini converts speech to text  
-3. AI extracts citizen profile  
-4. Eligibility engine matches schemes  
-5. Bedrock explains eligibility  
-6. System returns document checklist  
-7. User fills forms via voice  
-8. AI reconfirms details  
-9. Redirect to official portal  
+* AMD-inspired futuristic design
+* Dark theme with high-performance feel
+* Responsive and interactive components
 
 ---
 
-## 🖥️ Tech Stack  
+## 🛠️ Tech Stack
 
-- **Frontend:** React / Gradio (MVP)  
-- **Backend:** Python FastAPI  
-- **AI:** AWS Bedrock  
-- **OCR:** AWS Textract  
-- **Storage:** AWS S3  
-- **Database:** DynamoDB / PostgreSQL  
-- **Speech:** Bhashini APIs  
+### Frontend
 
----
+* Next.js (App Router)
+* React.js
+* Tailwind CSS
 
-## 🎯 Impact  
+### Backend (Planned)
 
-GovAssist AI aims to:
+* FastAPI
+* REST APIs
 
-- Reduce application rejection rates  
-- Minimize middlemen exploitation  
-- Improve rural adoption of digital governance  
-- Increase access to welfare schemes  
-- Save citizens’ time and effort  
+### AI/ML (Planned)
 
----
+* Scikit-learn / TensorFlow
+* Predictive analytics models
 
-## 🧑‍🤝‍🧑 Team  
+### Cloud & Deployment
 
-**Cybernetics Crew BIT**  
-Birla Institute of Technology, Mesra (Jaipur Campus)
-
-Team Lead: **Aryan Gaur**
+* Google Cloud Run / Firebase
+* Docker
 
 ---
 
-## 🚀 Future Enhancements  
+## 🧩 Project Structure
 
-- Real-time grievance submission  
-- Admin dashboard for NGOs/CSCs  
-- Advanced recommendation engine  
-- Aadhaar-based verification  
-- Multi-language UI expansion  
+```
+apex-health-ai/
+│
+├── app/
+│   ├── doctor-dashboard/
+│   ├── patient-hub/
+│   ├── evaluation/
+│   ├── prd/
+│   ├── layout.js
+│   └── page.js
+│
+├── public/
+├── package.json
+└── README.md
+```
 
 ---
 
-## 📜 License  
+## ⚡ How to Run Locally
 
-MIT License — Free to use for educational and research purposes.
+```bash
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/apex-health-ai.git
+
+# Navigate to project
+cd apex-health-ai
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
 
 ---
 
-## 📞 Contact  
+## ☁️ Deployment
 
-If you want to collaborate or learn more:
+The project is designed for deployment on:
 
-📧 Email: yashosw10@gmail.com  
-🔗 GitHub: https://github.com/yashosw10  
-🌐 LinkedIn: www.linkedin.com/in/yashowardhansw
+* Google Cloud Run
+* Firebase Hosting
+
+---
+
+## 🔮 Future Enhancements
+
+* ✅ AI-based patient risk prediction
+* ✅ Anomaly detection in vitals
+* ✅ Diagnosis assistance system
+* ✅ Real-time IoT integration
+* ✅ Secure authentication (JWT / Firebase Auth)
+* ✅ Integration with Google Cloud AI services
+
+---
+
+## 📌 Assumptions
+
+* Current version focuses on frontend prototype
+* Backend and ML integration are modular and extensible
+* Data used is simulated for demonstration
+
+---
+
+## 🧪 Testing
+
+* Manual UI testing performed
+* Route navigation verified
+* Component rendering validated
+
+---
+
+## 🔐 Security Considerations
+
+* Planned secure authentication system
+* Role-based access control
+* Future API protection using JWT
+
+---
+
+## 🌍 Real-World Impact
+
+* Enhances healthcare efficiency
+* Enables early risk detection
+* Supports doctors with AI insights
+* Improves patient engagement
+
+---
+
+## 📎 Submission Details
+
+* Public GitHub repository
+* Single branch (main)
+* Lightweight repository (<1MB excluding node_modules)
+* Clean and maintainable code
+
+---
+
+## 👨‍💻 Author
+
+**Aryan Gaur**
+Computer Science Engineering | AI Enthusiast
+
+---
+
+## ⭐ Acknowledgment
+
+Built using **Google Antigravity** for rapid prototyping and intelligent system design.
+
+---
+
 
 📧 Email: aryangaur76731@gmail.com  
 🔗 GitHub: https://github.com/Aryangaur-code  
